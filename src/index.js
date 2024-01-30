@@ -1,13 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
+import AuthProvider from "./store/AuthProvider";
+import ExpenseProvider from "./store/ExpenseProvider";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <AuthProvider>
+        <ExpenseProvider>
+          <App />
+        </ExpenseProvider>
+      </AuthProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

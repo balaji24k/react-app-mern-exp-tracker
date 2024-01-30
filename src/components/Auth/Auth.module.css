@@ -1,0 +1,24 @@
+.container {
+  box-shadow: 0 0 4px blue;
+  display: block;
+  width: 400px;
+  margin: 100px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.container input {
+  width: 90%;
+  height: 25px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.container button {
+  background: green;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 3px;
+}

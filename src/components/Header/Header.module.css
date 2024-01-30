@@ -1,0 +1,44 @@
+.beforeLogin {
+  width: 100%;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.afterLogin {
+  width: 100%;
+  background: blue;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.afterLogin button {
+  font-size: 15px;
+  height: 30px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 40px;
+}
+
+.afterLogin h5{
+  padding: 0;
+  margin: 0;
+  margin: 0 40px;
+}
+
+.navlink {
+  margin: 0 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.activeLink {
+  background: red;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
